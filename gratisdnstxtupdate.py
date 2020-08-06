@@ -94,8 +94,8 @@ def main():
             raise "unexpected http code while adding TXT record for domain: " + str(resp.getcode())
 
         # Give time for the new record to propagate.
-        log.info("Waiting 15 minutes for the new DNS record to propagate")
-        time.sleep(60*15)
+        log.info("Waiting 30 minutes for the new DNS record to propagate")
+        time.sleep(60*30)
 
 if __name__ == "__main__":
     main()
